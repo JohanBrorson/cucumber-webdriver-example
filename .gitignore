@@ -1,7 +1,16 @@
-*.class
+# Eclipse
+.classpath
+.project
+.checkstyle
+.settings/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# IntelliJ
+.idea/
+*.iml
+
+# Build and unit tests
+
+target/
 
 # Package Files #
 *.jar
