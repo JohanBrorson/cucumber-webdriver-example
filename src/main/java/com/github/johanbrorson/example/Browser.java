@@ -1,5 +1,7 @@
 package com.github.johanbrorson.example;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -17,5 +19,9 @@ public class Browser {
 
   public void teardown() {
     driver.quit();
+  }
+
+  public byte[] captureScreenshot() {
+    return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
   }
 }

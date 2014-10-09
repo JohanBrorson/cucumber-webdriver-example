@@ -3,6 +3,7 @@ package com.github.johanbrorson.example;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -39,7 +40,10 @@ public class SearchStepDefs {
   }
 
   @After
-  public void teardDown() {
+  public void tearDown(Scenario scenario) {
+    if (scenario.isFailed()) {
+      scenario.embed(browser.captureScreenshot(), "image/png");
+    }
     browser.teardown();
   }
 
