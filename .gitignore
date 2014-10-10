@@ -9,10 +9,9 @@
 *.iml
 
 # Build and unit tests
-
 target/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.ear
