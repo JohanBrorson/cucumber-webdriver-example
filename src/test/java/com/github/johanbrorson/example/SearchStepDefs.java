@@ -36,7 +36,7 @@ public class SearchStepDefs {
   @Then("^there are search results$")
   public void checkSearchResult() {
     String header = searchResultPage.getHeader();
-    Assert.assertTrue(header.contains("We've found"));
+    Assert.assertTrue(header.contains("We’ve found"));
     Assert.assertTrue(searchResultPage.hasRepositoryListItems());
   }
 
