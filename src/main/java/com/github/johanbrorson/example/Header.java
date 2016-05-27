@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class Header {
   private final WebDriver driver;
-  private final By searchInput = By.cssSelector(".js-site-search-form>input");
+  private final By searchInput = By.cssSelector(".header-search-input");
 
   public Header(WebDriver driver) {
     this.driver = driver;
