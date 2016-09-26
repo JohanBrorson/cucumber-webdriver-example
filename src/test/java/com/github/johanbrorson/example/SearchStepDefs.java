@@ -3,6 +3,10 @@ package com.github.johanbrorson.example;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
+import com.github.johanbrorson.example.pageobjects.Header;
+import com.github.johanbrorson.example.pageobjects.HomePage;
+import com.github.johanbrorson.example.pageobjects.SearchResultPage;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

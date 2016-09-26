@@ -1,4 +1,4 @@
-package com.github.johanbrorson.example;
+package com.github.johanbrorson.example.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
